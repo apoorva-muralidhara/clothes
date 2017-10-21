@@ -1,0 +1,32 @@
+<h1>Products</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Description</th>
+  </tr>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= image_tag(product.image) %></td>
+      <td><%= product.description %></td>
+    </tr>
+    <table>
+      <tr>
+	<th>Waist</th>
+	<th>Length</th>
+	<th>Style</th>
+	<th>Count</th>
+      </tr>
+      <% product.variants.each do |variant| %>
+        <tr>
+	  <td><%= variant.waist %></td>
+	  <td><%= variant.length %></td>
+	  <td><%= variant.style %></td>
+	  <td><%= variant.count %></td>
+	</tr>
+      <% end %>
+    </table>
+  <% end %>
+</table>

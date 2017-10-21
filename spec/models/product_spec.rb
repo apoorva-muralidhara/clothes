@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  let(:products_url) { 'http://localhost:3000/products' }
+  let(:products_url) { 'http://localhost:3535/products' }
 
   let(:json_api_headers) do
     { content_type: "application/vnd.api+json" }

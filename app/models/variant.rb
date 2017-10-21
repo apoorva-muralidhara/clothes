@@ -1,0 +1,2 @@
+class Variant < Base
+end

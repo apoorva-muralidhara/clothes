@@ -27,7 +27,8 @@ create role clothes with createdb login password 'clothes';
 ```
 bundle install
 rails db:create:all
-RAILS_ENV=test db:migrate
+rails db:migrate
+RAILS_ENV=test rails db:migrate
 ```
 
 ## Running specs

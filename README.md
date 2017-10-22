@@ -12,6 +12,7 @@ The model spec for `Product` uses [webmock](https://github.com/bblimke/webmock) 
 
 ## Installing gems
 To install gems, you need to run this at the top level of the Rails app:
+
 ```bundle install```
 
 ## Postgres
